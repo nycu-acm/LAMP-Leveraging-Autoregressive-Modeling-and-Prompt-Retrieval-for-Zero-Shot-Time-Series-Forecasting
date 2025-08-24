@@ -16,3 +16,9 @@ mse:0.23574131727218628, mae:0.29538705945014954
 zero_shot_forecast_ETTm2_LAMP_ETTm2_sl672_ll576_tl96_lr0.001_bt256_wd0_hd2048_hl2_cosTrue_mixFalse_test_0  
 mse:0.0679514929652214, mae:0.16175973415374756
 
+zero_shot_forecast_ETTh1_LAMP_ETTh1_sl672_ll576_tl96_lr0.001_bt256_wd0_hd2048_hl2_cosTrue_mixFalse_test_0  
+mse:0.27755364775657654, mae:0.33525559306144714
+
+zero_shot_forecast_ETTh1_LAMP_ETTh1_sl672_ll576_tl96_lr0.001_bt256_wd0_hd2048_hl2_cosTrue_mixFalse_test_0  
+mse:0.3771599233150482, mae:0.3948279619216919
+
