@@ -85,7 +85,12 @@
             <div class="card">
               <h3>🏗️ LAMP Architecture</h3>
               <div class="fig"><img src="assets/img/Fig2.png" alt="Architecture of LAMP"></div>
-              <p class="caption">LAMP architecture</p>
+              <p class="caption"> The time series <span class="math">\( \mathbf{X}_{1:T} \)</span> is decomposed into three interpretable components:
+        <strong>trend</strong>, <strong>seasonal</strong>, and <strong>residual</strong>. These components are processed through
+        separate encoders, and their embeddings are used to retrieve relevant prompts from structured prompt pools
+        initialized from the LLM's vocabulary space. Additionally, a textual description of the dataset is encoded and
+        concatenated with retrieved prompt values and embedded time-series tokens. This fused representation is passed to
+        a frozen decoder-only LLM (e.g., GPT-2), which autoregressively forecasts future values.</p>
             </div>
           </div>
         </div>
