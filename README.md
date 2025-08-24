@@ -5,7 +5,7 @@
 <!-- [![PWC](https://img.shields.io/badge/PDF-blue)]()
 [![PWC](https://img.shields.io/badge/Supp-7DCBFF)]()
 [![PWC](https://img.shields.io/badge/ArXiv-b31b1b)]() -->
-[![PWC](https://img.shields.io/badge/Project%20Page-0047ab)](https://nycu-acm.github.io/LAMP-Leveraging-Autoregressive-Modeling-and-Prompt-Retrieval-for-Zero-Shot-Time-Series-Forecasting/website/)
+[![PWC](https://img.shields.io/badge/Project%20Page-0047ab)](https://github.com/nycu-acm/LAMP-Leveraging-Autoregressive-Modeling-and-Prompt-Retrieval-for-Zero-Shot-Time-Series-Forecasting/website/)
 <!-- [![PWC](https://img.shields.io/badge/Presentation-ff0000)]() -->
 <!-- [![PWC](https://img.shields.io/badge/Bibtex-CB8CEA)](#citation) -->
 
@@ -64,7 +64,7 @@ bash ./scripts/[ETTh1, ETTh2, ETTm1, ETTm2].sh
 
 ### Test/ Inference Stage
 
-After training, we can test TEMPO model under the zero-shot setting:
+After training, we can test LAMP model under the zero-shot setting:
 
 ```
 bash ETTh1_test.sh
