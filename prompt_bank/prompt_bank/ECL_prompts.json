@@ -1,0 +1,5 @@
+{
+  "trend": "You are forecasting the long-term trend of electric power consumption in a energy / household electricity usage dataset called Electric Power Consumption in One Household, sampled every 1 minute over 47 months. Focus on modeling smooth and gradual structural changes over time.",
+  "seasonal": "You are forecasting the daily seasonal variation of electric power consumption in the energy / household electricity usage dataset Electric Power Consumption in One Household, sampled every 1 minute. Focus on modeling repeating cycles or periodic patterns in the data.",
+  "residual": "You are estimating short-term irregular fluctuations in electric power consumption in the dataset Electric Power Consumption in One Household after removing trend and daily seasonality. The data is sampled at 1 minute and spans 47 months. Focus on modeling noise and unexpected spikes."
+}

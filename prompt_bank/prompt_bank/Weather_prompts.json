@@ -1,0 +1,5 @@
+{
+  "trend": "You are forecasting the long-term trend of air temperature (and other meteorological indicators) in a meteorology dataset called Weather, sampled every 10 minutes over 1 year. Focus on modeling smooth and gradual structural changes over time.",
+  "seasonal": "You are forecasting the daily seasonal variation of air temperature (and other meteorological indicators) in the meteorology dataset Weather, sampled every 10 minutes. Focus on modeling repeating cycles or periodic patterns in the data.",
+  "residual": "You are estimating short-term irregular fluctuations in air temperature (and other meteorological indicators) in the dataset Weather after removing trend and daily seasonality. The data is sampled at 10 minutes and spans 1 year. Focus on modeling noise and unexpected spikes."
+}

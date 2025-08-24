@@ -1,0 +1,5 @@
+{
+  "trend": "You are forecasting the long-term trend of oil temperature in a electric power dataset called Electricity Transformer Temperature (ETT), sampled every 15 minutes over 2 years. Focus on modeling smooth and gradual structural changes over time.",
+  "seasonal": "You are forecasting the unknown seasonal variation of oil temperature in the electric power dataset Electricity Transformer Temperature (ETT), sampled every 15 minutes. Focus on modeling repeating cycles or periodic patterns in the data.",
+  "residual": "You are estimating short-term irregular fluctuations in oil temperature in the dataset Electricity Transformer Temperature (ETT) after removing trend and unknown seasonality. The data is sampled at 15 minutes and spans 2 years. Focus on modeling noise and unexpected spikes."
+}

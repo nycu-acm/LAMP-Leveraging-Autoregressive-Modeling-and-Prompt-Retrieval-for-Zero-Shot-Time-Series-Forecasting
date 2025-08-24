@@ -1,0 +1,5 @@
+{
+  "trend": "You are forecasting the long-term trend of road occupancy rates in a Transportation / Traffic dataset called Traffic, sampled every hourly over unknown. Focus on modeling smooth and gradual structural changes over time.",
+  "seasonal": "You are forecasting the daily seasonal variation of road occupancy rates in the Transportation / Traffic dataset Traffic, sampled every hourly. Focus on modeling repeating cycles or periodic patterns in the data.",
+  "residual": "You are estimating short-term irregular fluctuations in road occupancy rates in the dataset Traffic after removing trend and daily seasonality. The data is sampled at hourly and spans unknown. Focus on modeling noise and unexpected spikes."
+}

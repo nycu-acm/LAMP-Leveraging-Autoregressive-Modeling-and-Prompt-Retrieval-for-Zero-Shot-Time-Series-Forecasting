@@ -1,0 +1,33 @@
+model_name=LAMP
+
+python -u run_multidomain.py \
+  --datasets ETTh1,ETTh2,ETTm1,electricity,traffic,weather \
+  --config_path ./configs/multiple_datasets.yml \
+  --task_name zero_shot_forecast \
+  --is_training 1 \
+  --electri_multiplier 1 \
+  --traffic_multiplier 1 \
+  --root_path ./dataset/ETT-small/ \
+  --data_path ETTm2.csv \
+  --model_id ETTm2 \
+  --llm_ckp_dir gpt2\
+  --model $model_name \
+  --data ETTm2 \
+  --seq_len 672 \
+  --label_len 576 \
+  --token_len 96 \
+  --test_seq_len 672 \
+  --test_label_len 576 \
+  --test_pred_len 96 \
+  --batch_size 256 \
+  --learning_rate 0.001 \
+  --patience 3 \
+  --mlp_hidden_dim 2048 \
+  --train_epochs 10 \
+  --gpu 0 \
+  --cosine \
+  --tmax 10 \
+  --target_data ETTm2 \
+  --test_data_path ETTm2.csv \
+  --visualize \
+  --loss MAE 

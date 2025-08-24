@@ -1,0 +1,5 @@
+{
+  "trend": "You are forecasting the long-term trend of univariate time series values in a various (economic, sales, etc.) dataset called M4, sampled every varies (yearly, quarterly, monthly, weekly, daily, hourly) over minimum observations: yearly=13, quarterly=16, monthly=42, weekly=80, daily=93, hourly=700. Focus on modeling smooth and gradual structural changes over time.",
+  "seasonal": "You are forecasting the unknown seasonal variation of univariate time series values in the various (economic, sales, etc.) dataset M4, sampled every varies (yearly, quarterly, monthly, weekly, daily, hourly). Focus on modeling repeating cycles or periodic patterns in the data.",
+  "residual": "You are estimating short-term irregular fluctuations in univariate time series values in the dataset M4 after removing trend and unknown seasonality. The data is sampled at varies (yearly, quarterly, monthly, weekly, daily, hourly) and spans minimum observations: yearly=13, quarterly=16, monthly=42, weekly=80, daily=93, hourly=700. Focus on modeling noise and unexpected spikes."
+}

@@ -1,0 +1,5 @@
+{
+  "trend": "You are forecasting the long-term trend of ratio of patients with influenza illness in a healthcare / epidemiology dataset called ILI dataset, sampled every weekly over 2002-2021. Focus on modeling smooth and gradual structural changes over time.",
+  "seasonal": "You are forecasting the yearly seasonal variation of ratio of patients with influenza illness in the healthcare / epidemiology dataset ILI dataset, sampled every weekly. Focus on modeling repeating cycles or periodic patterns in the data.",
+  "residual": "You are estimating short-term irregular fluctuations in ratio of patients with influenza illness in the dataset ILI dataset after removing trend and yearly seasonality. The data is sampled at weekly and spans 2002-2021. Focus on modeling noise and unexpected spikes."
+}

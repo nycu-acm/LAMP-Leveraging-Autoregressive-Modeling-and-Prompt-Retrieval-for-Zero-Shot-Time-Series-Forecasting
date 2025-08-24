@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UI-Styler</title>
+  <meta name="description" content="UI-Styler project page">
+  <meta property="og:title" content="UI-Styler">
+  <meta property="og:description" content="Class-aware, unpaired image translation for ultrasound cross-device robustness.">
+  <meta property="og:image" content="assets/img/teaser_problem.png">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <div class="brand">UI-Styler</div>
+      <div class="links">
+        <a class="btn" href="#abstract">Abstract</a>
+        <a class="btn" href="#method">Methodology</a>
+        <a class="btn" href="#results">Experiments</a>
+        <!-- <a class="btn" href="#resources">Resources</a> -->
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container">
+      <div class="badge-row"><span class="badge">Time Series Forecasting • Large Language Models • Foundation Models • Prompt Tuning • Multi Modal</span></div>
+
+      <h1 class="title-main">LAMP</h1>
+      <h2 class="title-sub">Leveraging Autoregressive Modeling and Prompt Retrieval for Zero-Shot Time Series Forecasting</h2>
+
+      <div class="authors">
+        <a href="https://scholar.google.com/citations?user=q-K4DDgAAAAJ&hl=en" target="_blank" rel="noopener">Quang-Thang Le</a>,
+        <a href="https://scholar.google.com/citations?user=UUT7AlUAAAAJ" target="_blank" rel="noopener">Nhat-Tuong Do-Tran</a>,
+        <a href="https://scholar.google.com/citations?user=xTdexhsAAAAJ&hl=zh-TW" target="_blank" rel="noopener">Ching-Chun Huang</a>
+      </div>
+
+      <div class="affil">Department of Computer Science, National Yang Ming Chiao Tung University</div>
+
+      <div class="logo-row">
+        <img src="assets/img/logo_nycu.png" alt="NYCU Logo" style="height:100px; width:auto;">
+        <img src="assets/img/logo_acm.png" alt="ACM Logo" style="height:100px; width:auto;">
+      </div>
+
+      <div class="cta-row">
+        <a class="btn primary" href="#" aria-disabled="true" target="_blank" rel="noopener">Paper (coming soon)</a>
+        <a class="btn primary" href="https://github.com/nycu-acm/LAMP-Leveraging-Autoregressive-Modeling-and-Prompt-Retrieval-for-Zero-Shot-Time-Series-Forecasting" target="_blank" rel="noopener">Code</a>
+        <a class="btn primary" href="#" aria-disabled="true" target="_blank" rel="noopener">Video (coming soon)</a>
+      </div>
+
+      <div class="hero-fig fig">
+        <img src="assets/img/teaser_problem.png" alt="Problem setting overview">
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ABSTRACT + CONTRIBUTION -->
+    <section id="abstract" class="section">
+      <div class="container">
+        <h2>📝 Abstract</h2>
+        <p>The application of Large Language Models (LLMs) in time series forecasting remains debated, as recent studies have shown that replacing LLMs with simpler components, such as basic attention layers, can lead to comparable or even improved performance, raising questions about the true contribution of LLMs in such tasks. To address this problem and unlock the potential of LLMs more effectively, we propose LAMP (Leveraging Autoregressive Modeling and Prompt Retrieval for Zero-Shot Time Series Forecasting), a zero-shot forecasting framework that leverages frozen pre-trained LLMs through dynamic prompt retrieval and autoregressive reasoning. LAMP first decomposes input time series into trend, seasonal, and residual components, then projects them into the LLM’s embedding space. For each component, the model retrieves semantically aligned prompts from specialized prompt pools using a similarity-based matching mechanism. These prompts are enhanced with textual guidance generated from dataset descriptions, which are encoded via a frozen text embedder to provide semantic conditioning. The selected prompt embeddings are then fused with the input and fed into a frozen LLM, which autoregressively generates future values without any parameter updates. This design enables LAMP to generalize across domains and forecasting horizons while remaining computationally efficient. Experiments across diverse benchmarks confirm that LAMP achieves strong zero-shot forecasting performance, especially in long-horizon and non-stationary scenarios, demonstrating the power of prompt-driven adaptation in bridging time series and language models. This framework enables practical deployment in real-world systems where domain shift and limited training data pose significant challenges.</p>
+
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <h3 id="contribution">LLM-based time series forecasting</h3>
+              <div class="fig">
+                <img src="assets/img/contribution.png" alt="LLM-based time series forecasting" 
+                    style="display:block; margin:0 auto; max-width:70%; height:auto;">
+              </div>
+              <p class="caption">Comparison of architectural designs for LLM-based time series forecasting.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- METHOD -->
+    <section id="method" class="section">
+      <div class="container">
+        <h2>📘 Methodology</h2>
+
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <h3>🏗️ LAMP Architecture</h3>
+              <div class="fig"><img src="assets/img/Fig2.png" alt="Architecture of LAMP"></div>
+              <p class="caption">LAMP architecture</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESULTS -->
+    <section id="results" class="section">
+      <div class="container">
+        <h2>🧪 Experiments</h2>
+        <div class="row">
+          
+          <div class="col-12">
+            <div class="card">
+              <h3>Quantitative Metrics</h3>
+              <div class="fig"><img src="assets/img/quantitative_results.png" alt="Quantitative results table"></div>
+              <p class="caption">Transfer Learning Forecasting Results Across Different Horizons. The best results are in bold, and the second-best
+are underlined.</p>
+            </div>
+          </div>
+          
+          <div class="col-12">
+            <div class="card">
+              <h3> The Effectiveness of LLMs in Time Series Forecasting</h3>
+              <div class="fig"><img src="assets/img/tab_4.png" alt=" The Effectiveness of LLMs in Time Series Forecasting"></div>
+              <p class="caption">Do pretrained language models contribute to forecasting performance?</p>
+            </div>
+          </div>
+          
+          <div class="col-12">
+            <div class="card">
+              <h3>Computational Efficiency Analysis</h3>
+              <div class="fig"><img src="assets/img/computation_cost.png" alt="Computational Efficiency Analysis"></div>
+              <p class="caption">Training and inference times per batch (in seconds) for LAMP and TEMPO models on the ETTh1 dataset.</p>
+            </div>
+          </div>
+
+
+          <div class="col-12">
+            <div class="card">
+              <h3>Visual Results</h3>
+              <div class="gallery one-col">
+                <div class="fig"><img src="assets/img/visual_res.png" alt="Visual results"><div class="caption">Forecasting visualization across four representative examples from the ETT, weather, traffic dataset. Each subplot shows the input historical values (blue), ground-truth future values (green), and predicted values (red dashed) by LAMP (left) and AutoTimes (right). The sequence length and prediction horizon are both set to 96. Results highlight the accuracy and adaptability of LAMP across diverse temporal patterns.</div></div>
+              </div>
+            </div>
+          </div>
+          
+        </div> <!-- row -->
+      </div> <!-- container -->
+    </section>
+
+    <!-- ACKNOWLEDGMENT -->
+    <section id="acknowledgment" class="section">
+    <div class="container">
+        <h2>💌 Acknowledgment</h2>
+        <div class="card">
+        <p style="font-size: 1.05rem; line-height: 1.7; margin: 0; text-align: justify; text-justify: inter-word;">
+            I would like to express my profound gratitude to my advisor, Professor Ching-Chun Huang, whose patient mentorship and insightful feedback have greatly influenced both this thesis and my growth as a researcher.  
+            I am equally indebted to my labmate, <strong>Nhat-Tuong Do-Tran</strong>, whose collaboration, encouragement, and constructive suggestions have been invaluable throughout this journey.  
+            I also deeply appreciate the inspiring atmosphere of the <a href="https://nycu-acm.github.io/ACM_NYCU_website/" target="_blank" rel="noopener">Applied Computing and Multimedia Lab (ACM Lab)</a>, which has provided not only technical resources but also a supportive community that fostered my academic curiosity.
+        </p>
+        <p style="color:#f59e0b; font-weight:600;">
+            🌟 With heartfelt appreciation — Thank you all! 謝謝!
+        </p>
+        </div>
+    </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div>© 2025 LAMP</div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
